@@ -3,16 +3,9 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Введите трёхзначное число");
-int num = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите трёхзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-int twoNumber = TwoNumber(num);
-Console.WriteLine(twoNumber);
-
-int TwoNumber(int num)
-{
-    int firstDigit = num % 100;
-    int lastDigit = num / 10;
-    int result = TwoNumber;
-    return result;
-}
+// Получаем вторую цифру числа
+int secondDigit = (number / 10) % 10;
+Console.WriteLine($"Вторая цифра числа {number} является {secondDigit}");
