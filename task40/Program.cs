@@ -4,15 +4,15 @@
 // Теорема о неравенстве треугольника: каждая сторона треугольника
 // меньше суммы двух других сторон.
 
-Console.WriteLine("Введите первую сторону триугольника");
+Console.WriteLine("Введите первую сторону треугольника");
 int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите вторую сторону триугольника");
+Console.WriteLine("Введите вторую сторону треугольника");
 int num2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите третью сторону триугольника");
+Console.WriteLine("Введите третью сторону треугольника");
 int num3 = Convert.ToInt32(Console.ReadLine());
 
 bool result = IsExistTriangle(num1,num2,num3);
-Console.WriteLine(result? "Триугольник существует" : "Триугольник не существует");
+Console.WriteLine(result? "Треугольник существует" : "Треугольник не существует");
 
 bool IsExistTriangle (int side1, int side2, int side3 )
 {
