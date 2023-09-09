@@ -49,7 +49,7 @@ rowsNum -= 1;
 columnsNum -=1;
 
 if (rowsNum < array2d.GetLength(0) && columnsNum < array2d.GetLength(1)) Console.WriteLine(array2d[rowsNum, columnsNum]);
-else Console.WriteLine($"Индекс строки {rowsNum +1} и индекс столбца {columnsNum +1} -> нет в массиве");
+else Console.WriteLine($"Значение этой строки {rowsNum +1} и этого столбца {columnsNum +1} -> нет в массиве");
 
 
 

@@ -6,15 +6,18 @@
 // 8 7,8 -7,1 9
 
 
-void PrintArray(double[,] matr)
+
+void PrintMatrix(double[,] matrix)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matr.GetLength(1); j++)
+        Console.Write("|");
+        for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{matr[i, j]:F1} ");
+            Console.Write($"{matrix[i, j],5:F1}");
         }
-        Console.WriteLine();
+        Console.WriteLine("|");
+
     }
 }
 
@@ -32,19 +35,9 @@ double[,] CreateMatrixRndDouble(int rows, int columns, int min, int max)
     return matrix;
 }
 
-// void FillArray(double[,] matr, double min, double max)
-// {
-//     for (int i = 0; i < matr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matr.GetLength(1); j++)
-//         {
-//             matr[i, j] = new Random().NextDouble(min, max + 1);
-//         }
-//     }
-// }
 
-double[,] matrix = CreateMatrixRndDouble(3, 4, 1, 100);
-PrintArray(matrix);
+double[,] matrix = CreateMatrixRndDouble(3, 4, 1, 99);
+PrintMatrix(matrix);
 Console.WriteLine();
 
 
