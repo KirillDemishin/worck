@@ -36,7 +36,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void FindingAverageElementsMatrix(int[,] matrix)
+int FindingAverageElementsMatrix(int[,] matrix)
 {
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
@@ -46,11 +46,11 @@ void FindingAverageElementsMatrix(int[,] matrix)
             avarage += matrix[i, j];
         }
         avarage /= matrix.GetLength(0);
-        Console.Write($"{avarage:F1}" + ": ");
     }
-
+    
 }
 
 int[,] array2d = CreateMatrixRndInt(3, 4, 1, 9);
 PrintMatrix(array2d);
-FindingAverageElementsMatrix(array2d);
+int findingAverageElementsMatrix = FindingAverageElementsMatrix(array2d);
+Console.Write($"{findingAverageElementsMatrix:F1}" + ": ");
