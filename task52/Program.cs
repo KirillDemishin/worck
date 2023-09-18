@@ -36,8 +36,9 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int FindingAverageElementsMatrix(int[,] matrix)
+double FindingAverageElementsMatrix(int[,] matrix)
 {
+    double avarage = 0;
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
         double avarage = 0;
@@ -47,7 +48,7 @@ int FindingAverageElementsMatrix(int[,] matrix)
         }
         avarage /= matrix.GetLength(0);
     }
-    
+    return avarage;
 }
 
 int[,] array2d = CreateMatrixRndInt(3, 4, 1, 9);

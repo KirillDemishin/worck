@@ -57,14 +57,14 @@ void OrderingNumber(int[,] matrix)
             
         }
     }
-    Console.WriteLine();
-    PrintMatrix(matrix);
 }
 
 
-int[,] array2d = CreateMatrixRndInt(4, 4, 1`, 9);
+int[,] array2d = CreateMatrixRndInt(4, 4, 1, 9);
 PrintMatrix(array2d);
 OrderingNumber(array2d);
+System.Console.WriteLine();
+PrintMatrix(array2d);
 
 
 

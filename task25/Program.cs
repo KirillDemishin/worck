@@ -23,7 +23,7 @@ int b = Convert.ToInt32(Console.ReadLine());
 
 int result = Power(a, b);
 
-Console.WriteLine("{0} в степени {1} равно {2}", a, b, result);
+Console.WriteLine($"{a} в степени {b} равно {result}");
 Console.ReadKey();
 
 
